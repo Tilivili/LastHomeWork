@@ -102,9 +102,9 @@ public class ParsData {
         }
         String[] fullName = String.valueOf(sb).split(" ");
         if (fullName.length == 3) {
-            dataDic.put("lastName", fullName[0]);
-            dataDic.put("firstName", fullName[1]);
             dataDic.put("patronymic", fullName[2]);
+            dataDic.put("firstName", fullName[1]);
+            dataDic.put("lastName", fullName[0]);
         }
         return dataDic;
     }
